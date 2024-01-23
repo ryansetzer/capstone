@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <script src="script.js"></script> 
+    <title>Capstone</title>
+</head>
+<body>
+    <h1>Capstone Prototype <span id="version">v1</span></h1>
+    <h2>By: EV, Seth, and Josh</h2>
+
+    <div id="full-image-processor">
+        <div class="selector">
+            <h3>Satellite Image</h3>
+            <input type="file" id="image-input">
+            <img id="photo"></img>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+
+        <div class="selector">
+            <h3>Hex Range</h3>
+
+            <div id="color-picker-container">
+                <div class="color-picker">
+                    <span>Color One</span>
+                    <input type="color" id="color-one">
+                    <p id="color-one-text">Ahh</p>
+                </div>
+
+                <div class="color-picker">
+                    <span>Color Two</span>
+                    <input type="color" id="color-two">
+                    <p id="color-two-text"></p>
+                </div>
+            </div>
+
+            <h4>Calculated Gradient</h4>
+            <div id="color-blender"></div>
+
+            <h4>Varience</h4>
+            <div id="slider-container">
+                <input type="range" min="0" max="255" id="varience-slider">
+            </div>
+
+            <button id="process-button">Process Image</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    init();
+</script>
+</html>

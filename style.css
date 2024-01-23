@@ -1,0 +1,90 @@
+body {
+    background-color: #373777;
+    font-family: 'Rubik';
+}
+
+h1, h3 {
+    font-family: 'Orbitron';
+}
+
+h2 {
+    font-size: 15px;
+}
+
+input {
+    border: none;
+    border-radius: 0px;
+}
+
+.color-picker {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /* border-style: solid; */
+    margin: 10px;
+    padding: 15px;
+    width: 45%;
+}
+
+.gradient {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.selector {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: space-around;
+    padding: 15px;
+    width: 45%;
+}
+
+.selector > * {
+    margin: 0;
+    margin-top: 10px;
+}
+
+#color-blender {
+    border-style: solid;
+    height: 15px;
+    width: 100%;
+}
+
+#color-picker-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#full-image-processor {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100%;
+}
+
+#photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#slider-container {
+    width: 100%;
+}
+
+#varience-slider {
+    width: 100%;
+}
+
+#version {
+    color: #ff2957;
+}
